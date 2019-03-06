@@ -6,11 +6,14 @@ LABEL maintainer="Girish Shanmugam <s.girishshanmugam@gmail.com>"
 
 
 # create empty directory to attach volume
-RUN # install Ubuntu packages
-    apt-get update && \
-    apt-get install -y \
-    wget && \
-	git clone https://github.com/vumaasha/Atlas.git && \
-	pip install -r models/product_categorization/requirements.txt
+# RUN apt-get update 
+
+#RUN apt-get install -y \
+#	git \
+#	python3-pip && \
+#   git clone https://github.com/vumaasha/Atlas.git && \
+#	pip3 install -r Atlas/models/product_categorization/requirements.txt 
+
+RUN mkdir test
     
 
